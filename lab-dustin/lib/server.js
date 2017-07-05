@@ -20,6 +20,7 @@ app.use(cors());        // enable crosite origin resoruce scripting
 
 //    * load routes
 app.use(require('../route/auth-router.js'));
+app.use(require('../route/recipe-router.js'));
 
 // add 404 route
 app.all('/api/*', (req, res, next) => res.sendStatus(404));
